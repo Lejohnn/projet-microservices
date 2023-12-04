@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Ajoutez vos styles ici ou importez-les depuis votre fichier styles.css */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .rounded-container {
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .inscription-details {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <title>Détails de l'Inscription</title>
+</head>
+<body>
+    <div class="container">
+        <div class="rounded-container">
+            <header class="page-header">
+                <h1>Détails de l'Inscription</h1>
+            </header>
+
+            <div class="inscription-details">
+                <h2>Inscription 1</h2>
+                <p>Date: 01/01/2023</p>
+                <p>Étudiant: Nom Complet 1</p>
+                <p>Matières Inscrites: Mathématiques, Français, Physique</p>
+                <!-- Ajoutez d'autres détails d'inscription si nécessaire -->
+            </div>
+
+            <a href="#" class="button back-button">
+                <span class="button__text">Retour</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

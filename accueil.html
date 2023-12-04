@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajoutez vos styles ici ou importez-les depuis votre fichier styles.css */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            height: 100%;
+        }
+
+        .main-container {
+            flex: 1;
+            display: flex;
+            overflow: hidden; /* Pour cacher le débordement du contenu */
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .dashboard-link {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #555;
+            transition: background-color 0.3s ease;
+        }
+
+        .dashboard-link:hover {
+            background-color: #555;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .user-info img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .rounded-container {
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <title>Tableau de Bord</title>
+</head>
+<body>
+    <header>
+        <h1>Gestion des Etudiants de IUSJ</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Tableau de Bord</h2>
+            <a href="index.html" class="dashboard-link">Page de Connexion</a>
+            <a href="gestionEtudiants/listEtudiant.html" class="dashboard-link">Liste des Étudiants</a>
+            <a href="gestionEtudiants/detailEtudiant.html" class="dashboard-link">Détails de l'Étudiant</a>
+            <a href="gestionEtudiants/ajoutEtudiant.html" class="dashboard-link">Formulaire Étudiant</a>
+            <a href="gestionNotes/listeNotes.html" class="dashboard-link">Liste des Notes</a>
+            <a href="gestionNotes/detailNote.html" class="dashboard-link">Détails de la Note</a>
+            <a href="gestionNotes/formulaireNote.html" class="dashboard-link">Formulaire de Note</a>
+            <a href="gestionMessagerie/boiteReceptionNotification.html" class="dashboard-link">Boîte de Réception</a>
+            <a href="gestionMessagerie/detailNotification.html" class="dashboard-link">Détails de la Notification</a>
+            <!-- Ajoutez d'autres liens vers vos vues ici -->
+        </div>
+
+        <div class="main-content">
+            <div class="rounded-container">
+                <div class="user-info">
+                    <span>Nom de l'utilisateur</span>
+                    <img src="user-avatar.jpg" alt="Avatar de l'utilisateur">
+                </div>
+                <h1>Bienvenue sur le Tableau de Bord</h1>
+                <p>Sélectionnez une option dans la barre latérale pour commencer.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

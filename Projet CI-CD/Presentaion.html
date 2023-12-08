@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Ajoutez vos styles ici ou importez-les depuis votre fichier styles.css */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .rounded-container {
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden; /* Ajout de la propriété overflow */
+        }
+
+        .student-details {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+
+        .search-form {
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .search-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Ajout de styles pour la photo et la description */
+        .profile-photo {
+            /* max-width: 100%; */
+            height: auto;
+            /* border-radius: 50%; */
+            margin-bottom: 15px;
+            /* object-fit: cover; Ajout de la propriété object-fit */
+            /* width: 100%; */
+            /* height: 150px; Ajustez la hauteur selon votre préférence */
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Ajout de styles pour les champs supplémentaires */
+        .cv-section {
+            margin-top: 20px;
+        }
+
+        .cv-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .cv-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cv-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+    <title>Présentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rounded-container">
+            <img class="profile-photo" src="img/OK.png" alt="Votre photo">
+            <div class="student-details">
+                <p class="description">
+                    Ingénieur en 4ème année à l'Institut Universitaire Saint Jean
+                </p>
+                
+                <!-- Champs supplémentaires pour le CV -->
+                <div class="cv-section">
+                    <h3>Expérience professionnelle</h3>
+                    <ul class="cv-list">
+                        <li>Stage en développement web chez Gajelabs</li>
+                        <li>Projet de groupe sur la conception d'une application mobile (2021)</li>
+                    </ul>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Compétences</h3>
+                    <ul class="cv-list">
+                        <li>Langages de programmation : JavaScript, PHP,CSS,html</li>
+                        <li>Frameworks : Angular, Laravel</li>
+                    </ul>
+                </div>
+
+  
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
